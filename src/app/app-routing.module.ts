@@ -1,18 +1,7 @@
 import { NgModule } from '@angular/core';
-import { Routes, RouterModule } from '@angular/router';
-import { PokemonListComponent } from './containers/pokemon-list/pokemon-list.component';
-import { PokemonDetailViewComponent } from './containers/pokemon-detail-view/pokemon-detail-view.component';
+import { RouterModule, Routes } from '@angular/router';
 
-const routes: Routes = [
-  {
-    path: '',
-    component: PokemonListComponent,
-  },
-  {
-    path: 'pokemon/:name',
-    component: PokemonDetailViewComponent,
-  },
-];
+const routes: Routes = [];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],

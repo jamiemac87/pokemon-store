@@ -5,10 +5,10 @@
         <div class="mat-header-cell"></div>
         <div class="mat-header-cell"></div>
       </div>
-      <div class="mat-row" *ngFor="let pokemon of pokemon">
-        <div class="mat-cell name">{{ pokemon.name }}</div>
+      <div class="mat-row">
+        <div class="mat-cell name"></div>
         <div class="mat-cell view-btn">
-          <a mat-stroked-button [routerLink]="['pokemon', pokemon.name]">VIEW</a>
+          <a mat-stroked-button>VIEW</a>
         </div>
       </div>
     </div>
