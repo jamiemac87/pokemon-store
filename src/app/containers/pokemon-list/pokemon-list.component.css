@@ -1,0 +1,11 @@
+.name {
+  text-transform: capitalize;
+}
+
+.view-btn {
+  text-align: right;
+}
+
+/* .mat-row:nth-child(odd) {
+  background-color: #ebffeb;
+} */

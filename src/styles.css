@@ -1,0 +1,56 @@
+/* You can add global styles to this file, and also import other style files */
+
+html,
+body {
+  height: 100%;
+}
+body {
+  margin: 0 auto;
+  font-family: Roboto, 'Helvetica Neue', sans-serif;
+  width: 1024px;
+  padding: 30px;
+}
+html * {
+  box-sizing: border-box;
+}
+
+/*
+Colours
+===
+
+DEEP KOAMARU - #3D3759
+TEAL - #86E7B8
+TEA GREEN - #D0FFB7
+TEA GREEN LIGHT - #C4FFC5
+BEIGE - #F2F5DE
+MINT - #93FF96
+
+*/
+
+/* Button styling */
+/* .mat-stroked-button {
+  background-color: white;
+} */
+
+/* Simple table styling */
+.mat-table {
+  display: block;
+}
+
+.mat-row,
+.mat-header-row {
+  display: flex;
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  align-items: center;
+  min-height: 48px;
+  padding: 5px 24px;
+}
+
+.mat-cell,
+.mat-header-cell {
+  flex: 1;
+  overflow: hidden;
+  word-wrap: break-word;
+  margin: 5px;
+}
