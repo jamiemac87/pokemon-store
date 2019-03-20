@@ -9,6 +9,8 @@ body {
   font-family: Roboto, 'Helvetica Neue', sans-serif;
   width: 1024px;
   padding: 30px;
+  background-image: url("./assets/poke-pattern.jpg");
+  background-repeat: repeat;
 }
 html * {
   box-sizing: border-box;
