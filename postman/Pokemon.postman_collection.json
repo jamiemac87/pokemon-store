@@ -1,0 +1,61 @@
+{
+	"info": {
+		"_postman_id": "f640d7a1-a73c-4fb6-852a-e95e11463c72",
+		"name": "Pokemon",
+		"description": "Pokemon API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Get All Orginal Pokemon",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "{{host}}/pokemon?limit={{limit}}",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"pokemon"
+					],
+					"query": [
+						{
+							"key": "limit",
+							"value": "{{limit}}"
+						}
+					]
+				},
+				"description": "Gets all original 151 pokemon"
+			},
+			"response": []
+		},
+		{
+			"name": "Get Individual Pokemon",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "{{host}}/pokemon/{{pokemon_name}}",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"pokemon",
+						"{{pokemon_name}}"
+					]
+				},
+				"description": "Get the details of an individual pokemon"
+			},
+			"response": []
+		}
+	]
+}
