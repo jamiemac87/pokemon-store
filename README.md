@@ -34,6 +34,10 @@ Further documentation on the cli can be found [here](https://angular.io/cli).
 
 Postman can be downloaded [here](https://www.getpostman.com/downloads/). You can find the postman collections and environments within the postman folder of this repo.
 
+## Install project dependencies
+
+Run `yarn` to install all the projects dependencies.
+
 ## Development server
 
 Run `yarn start` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
