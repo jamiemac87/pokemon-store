@@ -33,10 +33,4 @@ export class PokemonService {
         })
       );
   }
-
-  getPokemon(name: string): Observable<Pokemon> {
-    return this.http
-      .get<PokemonApiResponse>(`${this.baseUrl}${this.endpoints.get.pokemon()}/${name}`)
-      .pipe(map(resp => PokemonAdapter.adapt(resp)));
-  }
 }
