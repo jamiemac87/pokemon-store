@@ -10,7 +10,8 @@ export class PokemonService {
   readonly baseUrl = `https://pokeapi.co/api/v2`;
   readonly endpoints = {
     get: {
-      pokemon: () => `/pokemon`,
+      allPokemon: () => `/pokemon`,
+      pokemon: (name: string) => `/pokemon/${name}`
     },
   };
 
@@ -18,7 +19,7 @@ export class PokemonService {
 
   getAllPokemon(limit = 151): Observable<Pokemon[]> {
     return this.http
-      .get<PokemonListApiResponse>(`${this.baseUrl}${this.endpoints.get.pokemon()}`, {
+      .get<PokemonListApiResponse>(`${this.baseUrl}${this.endpoints.get.allPokemon()}`, {
         params: {
           limit: limit + '',
         },
@@ -36,7 +37,7 @@ export class PokemonService {
 
   getPokemon(name: string): Observable<Pokemon> {
     return this.http
-      .get<PokemonApiResponse>(`${this.baseUrl}${this.endpoints.get.pokemon()}/${name}`)
+      .get<PokemonApiResponse>(`${this.baseUrl}${this.endpoints.get.pokemon(name)}`)
       .pipe(map(resp => PokemonAdapter.adapt(resp)));
   }
 }
